@@ -22,25 +22,26 @@ int _printf(const char *format, ...)
 		{
 			int c = va_arg(args, int);
 
-			putchar(c);
+			write(1, &c, sizeof(char));
 			count++;
 		}
 		else if (*format == 's')
 		{
 			char *s = va_arg(args, char*);
 
-			fputs(s, stdout);
-			count += strlen(s);
+			size_t len = strlen(s);
+			write(1, s, len);
+			count += len;
 		}
 		else if (*format == '%')
 		{
-			putchar('%');
+			write(1, "%", sizeof(char));
 			count++;
 		}
 		}
 		else
 		{
-			putchar(*format);
+			write(1, format, sizeof(char));
 			count++;
 		}
 		format++;
