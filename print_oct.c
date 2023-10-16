@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_octa - prints an octal number.
+ * print_octa - a function that prints an octal number.
  * @val: arguments.
  * Return: counter.
  */
