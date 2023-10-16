@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_unsigned - prints int.
+ * print_unsigned - a function that prints int.
  * @args: argument.
  * Return: num of char printed
  */
@@ -42,4 +42,3 @@ int print_unsigned(va_list args)
 
 	return (i);
 }
-
