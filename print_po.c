@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_po - prints an hexgecimal number.
+ * print_po - a function that  prints an hexgecimal number.
  * @val: arguments.
  * Return: counter.
  */
